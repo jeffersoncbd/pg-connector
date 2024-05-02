@@ -1,4 +1,6 @@
-use sqlx::{postgres::PgPoolOptions, Error, Pool, Postgres};
+use sqlx::{postgres::PgPoolOptions, Error};
+
+pub use sqlx::{Pool, Postgres};
 
 pub struct PgConnector {
     postgres_url: String,
