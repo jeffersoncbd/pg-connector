@@ -1,5 +1,6 @@
-use sqlx::{postgres::PgPoolOptions, Error, Pool, Postgres};
+use sqlx::{postgres::PgPoolOptions, Pool, Postgres};
 
+pub use sqlx::{query, Error};
 pub type PostgresConnection = Pool<Postgres>;
 
 pub struct PgConnector {
